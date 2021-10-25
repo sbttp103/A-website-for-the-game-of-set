@@ -1,4 +1,4 @@
-# Team1Project5
+## Webite for Game of Set
 
 ## In this project, we re-designed the game of set.
 
