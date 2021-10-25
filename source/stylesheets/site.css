@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background:cornsilk;
+}
+
+.set-game{
+  width: 1024px;
+  height: 512px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-scoreboard {
+  width: 200px;
+  height: 128px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  border: 1px solid black;
+  text-align:center;
+
+}
+
+
+.div-timeDisplay {
+  width: 120px;
+  height: 40px;
+  position: relative;
+  top: 90px;
+  right:180px;
+  border: 1px solid black;
+  text-align:center;
+
+}
+
+.div-card-on-table {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transition: transform .5s;
+}
+
+.div-card-on-table:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.div-card-on-table.selected {
+  border: 5px solid pink;
+  transform: scale(1.05);
+}
+
+.card-on-table {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 5px;
+
+}
+
+.greeting {
+  overflow: hidden;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  text-align: center;
+  background-color: beige;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.splash{
+  position: fixed;
+  top: 0;
+  left: 10;
+  right: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: cornsilk;
+  z-index: 200;
+  color: black;
+  text-align: center;
+  line-height: 80vh;
+}
+
+.splash.display-none{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: cornsilk;
+  z-index: -10;
+  color: black;
+  text-align: center;
+  line-height: 80vh;
+}
